@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+C3P0的缺省（默认）配置
+如果在代码中ComboPooledDataSource ds = new ComboPooledDataSource();
+这样写就表示使用的是C3P0的缺省（默认）配置信息来创建数据源
+ -->
+ 
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.cj.jdbc.driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/cookieshop?serverTimezone=GMT%2B8</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        s
+        <property name="acquireIncrement">5</property>
+        <property name="initialPoolSize">10</property>
+        
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolsize">100</property>        
+    </default-config>
+</c3p0-config>
